@@ -8,13 +8,16 @@ import {NgZorroAntdModule} from 'ng-zorro-antd';
 import {FormsModule} from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 import { ChangePasswordComponent } from './change-password/change-password.component';
+import { RegisterComponent } from './register/register.component';
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    ChangePasswordComponent
+    ChangePasswordComponent,
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +26,6 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
       HttpClientModule
   ],
   providers: [],
-  bootstrap: [ChangePasswordComponent]
+  bootstrap: [AppComponent]
 })
 export class AppModule { }

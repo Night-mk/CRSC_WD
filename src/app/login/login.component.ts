@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
-import {Config} from 'protractor';
 
 @Component({
   selector: 'app-login',
@@ -21,11 +20,10 @@ export class LoginComponent implements OnInit {
   ngOnInit() {
     // 初始化时请求验证码
     console.log('test');
-    this.getCaptcha('/CRSS/index.php/Login/verify').subscribe((data) => {
-      // this.captchaImgUrl = data;
-      console.log (JSON.stringify(data));
-      console.log (this.captchaImgUrl);
-    });
+    // this.getCaptcha('/CRSS/index.php/Login/verify').subscribe((data) => {
+    //   // this.captchaImgUrl = data;
+    //   console.log (this.captchaImgUrl);
+    // });
   }
 
   /**

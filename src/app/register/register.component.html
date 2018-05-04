@@ -1,0 +1,50 @@
+<nz-layout class="layout content-wrapper">
+  <!--header-->
+  <nz-header>
+    <!--<div class="logo"></div>-->
+  </nz-header><!--end header-->
+
+  <!--content-->
+  <nz-content style="padding:10% 35%;">
+    <div style="background:#fff; padding: 24px;">
+      <div class="text-center">注册</div>
+      <nz-input [(ngModel)]="userName" [nzPlaceHolder]="'用户名'"></nz-input>
+      <nz-input [nzType]="'password'" [(ngModel)]="passWord" [nzPlaceHolder]="'密码'"></nz-input>
+      <nz-input [nzType]="'password'" [(ngModel)]="passWord" [nzPlaceHolder]="'密码'"></nz-input>
+      <nz-input [(ngModel)]="phoneNumber" [nzPlaceHolder]="'手机号'"></nz-input>
+      <nz-input [(ngModel)]="email" [nzPlaceHolder]="'邮箱'"></nz-input>
+      <nz-input [(ngModel)]="school" [nzPlaceHolder]="'学校'"></nz-input>
+      <nz-input [(ngModel)]="collage" [nzPlaceHolder]="'学院'"></nz-input>
+      <nz-input [(ngModel)]="major" [nzPlaceHolder]="'专业'"></nz-input>
+      <div>
+        <label>性别</label>
+        <nz-radio-group [(ngModel)]="sex">
+          <label nz-radio [nzValue]="'male'">
+            <span>男</span>
+          </label>
+          <label nz-radio [nzValue]="'female'">
+            <span>女</span>
+          </label>
+        </nz-radio-group>
+      </div>
+      <div>
+        <label>用户类型</label>
+        <nz-radio-group [(ngModel)]="role">
+          <label nz-radio [nzValue]="'student'">
+            <span>学生</span>
+          </label>
+          <label nz-radio [nzValue]="'teacher'">
+            <span>教师</span>
+          </label>
+        </nz-radio-group>
+      </div>
+    <div class="button-container">
+      <button class="login-button-style" nz-button [nzType]="'primary'">
+        <span>注册</span>
+      </button>
+    </div>
+  </div>
+  </nz-content><!--end content-->
+
+  <nz-footer style="text-align: center;">CRSC_WD ©2018 Implement By 614</nz-footer>
+</nz-layout>
