@@ -1,0 +1,32 @@
+<nz-layout class="layout content-wrapper">
+    <!--header-->
+    <nz-header>
+        <div class="logo"></div>
+    </nz-header><!--end header-->
+
+    <!--content-->
+    <nz-content style="padding:0 50px;">
+        <div style="background:#fff; padding: 24px;">
+            <div class="text-center">CR课堂在线考勤系统</div>
+            <nz-input [(ngModel)]="userName" [nzPlaceHolder]="'用户名'"></nz-input>
+            <nz-input [nzType]="'password'" [(ngModel)]="passWord" [nzPlaceHolder]="'密码'"></nz-input>
+            <nz-input [(ngModel)]="captcha" [nzPlaceHolder]="'验证码'"></nz-input>
+            <!--<img src="{{captchaImgUrl}}" />-->
+            {{captchaImgUrl}}
+            <div>
+                <label nz-checkbox>
+                    <span>记住密码</span>
+                </label>
+            </div>
+            <button nz-button [nzType]="'primary'">
+                <span>登陆</span>
+            </button>
+            <button nz-button [nzType]="'default'">
+                <span>注册</span>
+            </button>
+            <!--<nz-input [(ngModel)]="inputValue" [nzPlaceHolder]="'用户名'" (ngModelChange)=""></nz-input>-->
+        </div>
+    </nz-content><!--end content-->
+
+    <nz-footer style="text-align: center;">CRSC_WD ©2018 Implement By 614</nz-footer>
+</nz-layout>
