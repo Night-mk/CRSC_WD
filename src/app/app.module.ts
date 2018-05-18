@@ -10,6 +10,7 @@ import {HttpClientModule} from '@angular/common/http';
 import { ChangePasswordComponent } from './change-password/change-password.component';
 import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
+import {CrscCookieService} from "./crsc-cookie.service";
 
 
 
@@ -27,7 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
       HttpClientModule,
       AppRoutingModule
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  providers: [CrscCookieService]
 })
 export class AppModule { }
