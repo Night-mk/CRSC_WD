@@ -11,6 +11,7 @@ import { ChangePasswordComponent } from './change-password/change-password.compo
 import { RegisterComponent } from './register/register.component';
 import { AppRoutingModule } from './app-routing.module';
 import {CrscCookieService} from "./crsc-cookie.service";
+import { ForgetPasswordComponent } from './forget-password/forget-password.component';
 
 
 
@@ -19,7 +20,8 @@ import {CrscCookieService} from "./crsc-cookie.service";
     AppComponent,
     LoginComponent,
     ChangePasswordComponent,
-    RegisterComponent
+    RegisterComponent,
+    ForgetPasswordComponent
   ],
   imports: [
     BrowserModule,
